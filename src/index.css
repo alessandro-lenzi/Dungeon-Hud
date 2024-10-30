@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Friend or Foe Tall BB';
+  src: url('./assets/fonts/FriendOrFoeTallBB.eot');
+  src:
+    url('./assets/fonts/FriendOrFoeTallBB.eot?#iefix')
+      format('embedded-opentype'),
+    url('./assets/fonts/FriendOrFoeTallBB.woff2') format('woff2'),
+    url('./assets/fonts/FriendOrFoeTallBB.woff') format('woff'),
+    url('./assets/fonts/FriendOrFoeTallBB.ttf') format('truetype'),
+    url('./assets/fonts/FriendOrFoeTallBB.svg#Friend or Foe Tall BB')
+      format('svg');
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -15,6 +28,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.hud-font {
+  font-family: 'Friend or Foe Tall BB';
 }
 
 a {

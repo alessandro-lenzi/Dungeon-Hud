@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <h1>Dungeon HUD (a.k.a. heads-up display)</h1>
+      <h1 className="hud-font">Dungeon HUD (a.k.a. heads-up display)</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
