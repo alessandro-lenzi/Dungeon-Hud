@@ -1,19 +1,20 @@
-import { useState } from 'react'
+import clsx from 'clsx'
 
 import './App.css'
+import { DungeonDialog } from './components/DungeonDialog'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
+    <div className={clsx('flex', 'flex-col', 'justify-center', 'gap-5')}>
       <h1 className="hud-font">Dungeon HUD (a.k.a. heads-up display)</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+
+      <div className="m-auto">
+        <DungeonDialog
+          title="Welcome Adventurer"
+          message="You have awakened."
+        />
       </div>
-    </>
+    </div>
   )
 }
 
